@@ -1,0 +1,21 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-direction: row;
+    height: 5vh;
+    width: 80vw;
+    background-color: black;
+    align-self: center;
+  }
+  
+  .link {
+    padding: 10px 40px 10px 40px;
+    color: antiquewhite;
+    cursor: pointer;
+  }
+  .link:hover {
+    color: crimson;
+    border-bottom: 3px solid lightgreen;
+  }

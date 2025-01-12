@@ -1,22 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+
+import Navbar from './components/navbar';
+import Home from './components/home';
+import Profile from './components/profile';
+import Portfolio from './components/portfolio';
+import Contact from './components/contact';
+
+import './styles/App.css';
 
 function App() {
+  const [page,setPage] = useState(0)
+  const handleNavClick = (index) => {
+    console.log('clicked', index)
+    setPage(index)
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <div className='container'>
+        <div className='navbar'>
+          {
+            ['home','profile','portfolio','contact'].map((item,index)=>
+              (
+                <Navbar item={item} key={index} handleClick={()=>handleNavClick(index)}/>
+              )
+            )
+          }
+        </div>
+        {
+          page===0?<Home/>:
+          page===1?<Profile/>:
+          page===2?<Portfolio/>:
+          page===3?<Contact/>:<div>not found</div>
+        }
+       </div>
       </header>
     </div>
   );
