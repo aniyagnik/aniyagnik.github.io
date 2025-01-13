@@ -1,0 +1,105 @@
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;  
+    width: 80vw;
+    height: 70vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/287/681/non_2x/black-fabric-texture-background-vector.jpg');
+    background-repeat: none;
+    background-size: cover;
+    color: azure;
+}
+
+.workex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40vw;
+    height: 70vh;
+}
+
+.head {
+    font-size: 2em;
+    width: fit-content;
+    align-self: center;
+    font-weight: bold;
+    padding: 0.2em 1em;
+    border-bottom: 5px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.workContent {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40vw;
+    height: fit-content;
+}
+
+.workCard {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    width: 40vw;
+    gap: 10;
+    height: fit-content;
+    border: 3px solid rgb(4, 0, 255);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(43, 70, 226);
+}
+
+.cardHeader {
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: cyan;
+}
+
+.title {
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: crimson;
+}
+
+.text {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.footer {
+    padding: 10px;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.certiBtn {
+    width: 30%;
+    padding: 10px;
+    color:rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.certiBtn:hover {
+    background-color: rgb(36, 44, 51);
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    width: 30vw;
+    height: 70vh;
+}
