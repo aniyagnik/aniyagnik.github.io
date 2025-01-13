@@ -17,16 +17,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <div className='container'>
-        <div className='navbar'>
-          {
-            ['home','profile','portfolio','contact'].map((item,index)=>
-              (
-                <Navbar item={item} key={index} handleClick={()=>handleNavClick(index)}/>
-              )
-            )
-          }
-        </div>
+        <div className='container'>
+        <Navbar handleClick={handleNavClick}/>
         {
           page===0?<Home/>:
           page===1?<Profile/>:

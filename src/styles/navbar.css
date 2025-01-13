@@ -15,8 +15,12 @@
     padding: 15px 40px 15px 40px;
     color: antiquewhite;
     cursor: pointer;
+    font-size: 1.5em;
   }
+
   .link:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
     color: crimson;
-    border-bottom: 3px solid lightgreen;
+    border-bottom: 8px solid lightgreen;
   }
