@@ -12,6 +12,7 @@
   }
   
   .link {
+    text-decoration: none;
     padding: 15px 40px 15px 40px;
     color: antiquewhite;
     cursor: pointer;

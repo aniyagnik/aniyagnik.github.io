@@ -1,33 +1,24 @@
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from './components/navbar';
-import Home from './components/home';
-import Profile from './components/profile';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
-
-import './styles/App.css';
+import Layout from './pages/layout';
+import Home from './pages/home';
+import Profile from './pages/profile';
+import Portfolio from './pages/portfolio';
+import Contact from './pages/contact';
 
 function App() {
-  const [page,setPage] = useState(0)
-  const handleNavClick = (index) => {
-    console.log('clicked', index)
-    setPage(index)
-  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className='container'>
-        <Navbar handleClick={handleNavClick}/>
-        {
-          page===0?<Home/>:
-          page===1?<Profile/>:
-          page===2?<Portfolio/>:
-          page===3?<Contact/>:<div>not found</div>
-        }
-       </div>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Layout />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
