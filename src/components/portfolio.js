@@ -43,7 +43,7 @@ export default function Portfolio() {
 			<span className='tag'>All</span>
 			{
 				tags.map(tag=>(
-					<span className='tag'>{tag}</span>
+					<span className='tag' key={tag}>{tag}</span>
 				))
 			}
 			</div>
@@ -73,7 +73,7 @@ export default function Portfolio() {
 							<div className='taskTags'>
 							{
 								item.tags.map(tag=>(
-									<span className='taskTag'>{tag}</span>
+									<span className='taskTag' key={tag}>{tag}</span>
 								))
 							}
 						</div>							

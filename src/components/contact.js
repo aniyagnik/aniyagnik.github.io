@@ -35,7 +35,7 @@ export default function Contact() {
         <div>
           {
             contactList.map(item=>(
-              <div className="contactInfo">
+              <div className="contactInfo" key={item.contact}>
                 {item.icon} {item.contact}
               </div>
             ))

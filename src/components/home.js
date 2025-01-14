@@ -47,7 +47,7 @@ export default function Home() {
       <div className='socials'>
         {
           contacts.map(item=>(
-            <a href={item.link} style={{color:'white',textDecoration:'none'}}>
+            <a href={item.link} key={item.link} style={{color:'white',textDecoration:'none'}}>
               <div style={{display:'flex',gap:10}}>
                 {item.icon}
                 {item.title}

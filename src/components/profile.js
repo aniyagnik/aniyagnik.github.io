@@ -52,7 +52,7 @@ export default function Profile() {
 				<div className="workContent">
 					{
 						exp.map(work=>(
-							<div className="workCard" text='light' border='danger' bg='dark'>
+							<div className="workCard" key={work.company} text='light' border='danger' bg='dark'>
 								<div class='title'>{work.company}</div>
 								<div style={{borderBottom:'1px solid black', fontSize:'0.9em',fontWeight:100}}>
 										{work.duration}
@@ -64,7 +64,7 @@ export default function Profile() {
 									<div className='text'>
 										{
 											work.crux.map((line,index)=>
-												<div><span>{index+1}.&nbsp;</span>{line}</div>
+												<div key={index}><span>{index+1}.&nbsp;</span>{line}</div>
 											)
 										}
 									</div>
