@@ -32,19 +32,19 @@ export default function Home() {
         <div className='aboutContainer'>
           <div className='about'>
             <Card>
-              <Card.Header as="h4">Hi There!! I am</Card.Header>
-              <Card.Header as="h2">Anirudh Shankar Yagnik</Card.Header>
-              <Card.Body>
-                <Card.Text className='text-sm-start'>I am a <span className='aboutBold'>MERN stack developer</span> passionate about creating dynamic web applications.</Card.Text>
+              <Card.Header as="h2">Hi There!! I am</Card.Header>
+              <Card.Header as="h1">Anirudh Shankar Yagnik</Card.Header>
+              <Card.Text className='aboutGoal'>trying bridge the gap between innovative web development and intelligent AI-powered applications.</Card.Text>
+              <Card.Body style={{fontSize:'1.1em'}}>
+                <Card.Text>I am a <span className='aboutBold'>MERN stack developer</span> passionate about creating dynamic web applications.</Card.Text>
                 <Card.Text>I am exploring the integration of <span className='aboutBold'>machine learning (ML)</span> to build smarter, data-driven solutions.</Card.Text>
-                <Card.Text>My <span className='aboutBold'>goal is to bridge the gap between innovative web development and intelligent AI-powered applications.</span></Card.Text>
                 <Card.Text>experienced in<span className='aboutBold'> Data Structures and Alogirthm</span></Card.Text>
               </Card.Body>
             </Card>
           </div>
         </div>
       </div>
-      <div className='contact'>
+      <div className='socials'>
         {
           contacts.map(item=>(
             <a href={item.link} style={{color:'white',textDecoration:'none'}}>
