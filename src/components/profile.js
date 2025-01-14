@@ -17,11 +17,37 @@ export default function Profile() {
 			detail:''
 		},
 	]
+	const education = [
+		{
+			institute:'Netaji Subhas University of Technology',
+			university:'NSUT',
+			degree:'M.tech (CSE)',
+			score:'7.6 percentile',
+			year:'2026',
+			location:'delhi',
+		},
+		{
+			institute:'Universal Public School',
+			university:'CBSE',
+			degree:'12th (PCM)',
+			score:'93.40 %',
+			year:'2017',
+			location:'delhi',
+		},
+		{
+			institute:'Universal Public School',
+			university:'CBSE',
+			degree:'10th',
+			score:'9.5 percentile',
+			year:'2015',
+			location:'delhi',
+		}
+	]
 	return (
 		<div className="profile">
 			<div class='workex'>
 				<div className='head'>
-					<RiSuitcaseFill color="gold"/>&nbsp;
+					<RiSuitcaseFill/>&nbsp;
 					work experience</div>
 				<div className="workContent">
 					{
@@ -53,8 +79,31 @@ export default function Profile() {
 			</div>
 			<div className='education'>
 				<div className='head'>
-					<FaBookOpen color="gold"/>&nbsp;
+					<FaBookOpen />&nbsp;
 					education
+				</div>
+				<div className="eduContent">
+					{
+						education.map((edu,index)=>(
+							<div className="eduCard" key={index}>
+								<div 
+									className="eduInfo" 
+									style={{
+										borderLeft: index%2===0?'10px solid crimson':'10px solid white'
+									}}
+								>
+									<div>{edu.year}</div>
+									<div>{edu.location}</div>
+								</div>
+								<div className="studyContent">
+									<div className="institute" style={{fontSize:'1.3em',fontWeight:'bold'}}>{edu.institute}</div>
+									<div className="degree" style={{color:'cyan', fontSize:'1.4em',fontWeight:'bold'}}>{edu.degree}</div>
+									<div className="university" style={{fontSize:'1.1em',color:'gold'}}>{edu.university}</div>
+									<div className="score" style={{fontSize:'1.1em',color:'gold'}}>@&nbsp;{edu.score}</div>
+								</div>
+							</div>
+						))
+					}
 				</div>
 			</div>
 		</div>
