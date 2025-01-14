@@ -5,6 +5,8 @@
     align-content: center;  
     width: 80vw;
     height: 70vh;
+    max-height: 70vh;
+    overflow-y: scroll;
     background-image: url('https://static.vecteezy.com/system/resources/previews/009/287/681/non_2x/black-fabric-texture-background-vector.jpg');
     background-repeat: none;
     background-size: cover;
@@ -14,7 +16,6 @@
 .workex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     width: 20vw;
     height: 70vh;
@@ -96,9 +97,9 @@
 }
 
 .education {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;  
     width: max-content;
     height: 70vh;

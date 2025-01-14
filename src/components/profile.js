@@ -21,9 +21,17 @@ export default function Profile() {
 		{
 			institute:'Netaji Subhas University of Technology',
 			university:'NSUT',
-			degree:'M.tech (CSE)',
+			degree:'M.Tech (CSE)',
 			score:'7.6 percentile',
 			year:'2026',
+			location:'delhi',
+		},
+		{
+			institute:'Maharaja Surajmal Institute of Technology',
+			university:'GGIPU',
+			degree:'B.Tech (CSE)',
+			score:'84.20 %',
+			year:'2021',
 			location:'delhi',
 		},
 		{
@@ -45,7 +53,7 @@ export default function Profile() {
 	]
 	return (
 		<div className="profile">
-			<div class='workex'>
+			<div className='workex'>
 				<div className='head'>
 					<RiSuitcaseFill/>&nbsp;
 					work experience</div>
@@ -53,7 +61,7 @@ export default function Profile() {
 					{
 						exp.map(work=>(
 							<div className="workCard" key={work.company} text='light' border='danger' bg='dark'>
-								<div class='title'>{work.company}</div>
+								<div className='title'>{work.company}</div>
 								<div style={{borderBottom:'1px solid black', fontSize:'0.9em',fontWeight:100}}>
 										{work.duration}
 									</div>

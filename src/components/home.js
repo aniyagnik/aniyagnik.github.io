@@ -36,6 +36,7 @@ export default function Home() {
               <Card.Header as="h1">Anirudh Shankar Yagnik</Card.Header>
               <Card.Text className='aboutGoal'>trying bridge the gap between innovative web development and intelligent AI-powered applications.</Card.Text>
               <Card.Body style={{fontSize:'1.1em'}}>
+                <Card.Text >current pursuing <span className='aboutBold'>M.Tech in Computer Science</span> from Netaji Subhas University of Technology</Card.Text>
                 <Card.Text>I am a <span className='aboutBold'>MERN stack developer</span> passionate about creating dynamic web applications.</Card.Text>
                 <Card.Text>I am exploring the integration of <span className='aboutBold'>machine learning (ML)</span> to build smarter, data-driven solutions.</Card.Text>
                 <Card.Text>experienced in<span className='aboutBold'> Data Structures and Alogirthm</span></Card.Text>

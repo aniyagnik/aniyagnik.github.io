@@ -50,7 +50,7 @@ export default function Portfolio() {
 			<div className='work'>
 				{
 					work.map(item=>(
-						<div className='taskCard'>
+						<div className='taskCard' key={item.title}>
 							<div className='taskTitle'>{item.title}</div>
 							<div 
 								className='taskBody'
