@@ -9,6 +9,8 @@
     background-repeat: none;
     background-size: cover;
     color: azure;
+    max-height: 70vh;
+    overflow-y: scroll;
 }
 
 .tags {

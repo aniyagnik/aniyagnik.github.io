@@ -3,6 +3,7 @@ import '../styles/home.css'
 import { Card,Image } from 'react-bootstrap';
 import { FaLinkedin,FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import ProfilePic from '../assets/asy-removebg-preview.jpg'
 
 export default function Home() {
   const contacts = [
@@ -27,7 +28,7 @@ export default function Home() {
     <div className="home">
       <div className='content'>
         <div className='picture'>
-          <Image thumbnail className='profilePic' src='https://i.pinimg.com/originals/ee/2e/2d/ee2e2da83529499e849591482beff620.jpg' alt='profile image'/>
+          <Image thumbnail className='profilePic' src={ProfilePic} alt='profile image'/>
         </div>
         <div className='aboutContainer'>
           <div className='about'>
